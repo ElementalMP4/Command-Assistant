@@ -43,7 +43,7 @@ unsigned int distance(const string& s1, const string& s2)
 }
 
 int main(int argc, char *argv[]) {
-   string command_list = exec("exec bash -c 'compgen -c'");
+   string command_list = exec("exec bash -c 'compgen -c | egrep -v \".dll|.exe|.NLS|.bat|.cmd|.ps1|.sql|.DLL|.EXE|.nlp|.log|.txt|.pdf|.html|.TXT|.xml|.mof|.png|.nls\"'");
    list<string> commands;
 
    stringstream ss(command_list);
