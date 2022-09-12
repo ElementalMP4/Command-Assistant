@@ -18,7 +18,7 @@ Then, move the executable to `/usr/lib`. You may want to copy the original `comm
 
 ```
 sudo mv /usr/lib/command-not-found /usr/lib/command-not-found-old
-sudo mv command-not-found /usr/lib-command-not-found
+sudo mv command-not-found /usr/lib/command-not-found
 ```
 
 Try typing an incorrect command and you should now be met with suggestions for commands you have installed.
